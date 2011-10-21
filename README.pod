@@ -1,0 +1,38 @@
+=head1 NAME
+
+Config::Mini::WithRegexp
+
+=head1 DESCRIPTION
+
+It is a extension format Config::Mini with supporting regex
+
+=head1 SYNOPSIS
+
+    # example yours.ini
+    [test]
+    test = 12
+    testre =~ /^(\d+)$/
+
+
+    # in code
+    my $cnf = Config::Mini::WithRegexp->new($file);
+    # $cnf similar Config::Mini
+    $cnf->regexp_prepare;
+    my $test = '123';
+    print $test =~ $cnf->section('test')->{testre} ? 1 : 0; # print 1
+    $test = '123www';
+    print $test =~ $cnf->section('test')->{testre} ? 1 : 0; # print 0
+
+=head1 SOURSE
+
+git@github.com:mrRico/p5-Config-Mini-WithRegexp.git
+
+=head1 SEE ALSO
+
+L<Config::Mini>
+
+=head1 AUTHOR
+
+mr.Rico <catamoose at yandex.ru>
+
+=cut

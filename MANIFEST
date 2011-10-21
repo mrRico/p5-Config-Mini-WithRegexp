@@ -1,6 +1,7 @@
 Changes
 Makefile.PL
 MANIFEST
-README
+README.pod
 t/Config-Mini-WithRegexp.t
+/t/conf.ini
 lib/Config/Mini/WithRegexp.pm
