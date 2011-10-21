@@ -1,0 +1,6 @@
+Revision history for Perl extension Config::Mini::WithRegexp.
+
+0.01  Fri Oct 21 12:20:51 2011
+	- original version; created by h2xs 1.23 with options
+		-AX Config::Mini::WithRegexp
+
