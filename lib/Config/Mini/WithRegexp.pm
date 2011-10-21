@@ -2,7 +2,7 @@ package Config::Mini::WithRegexp;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.01_01';
 
 use base 'Config::Mini';
 use Scalar::Util qw();
@@ -52,7 +52,9 @@ Config::Mini::WithRegexp
 
 =head1 DESCRIPTION
 
-It is a extension format Config::Mini with supporting regex
+It is a extension format Config::Mini with supporting regex.
+
+Betta version.
 
 =head1 SYNOPSIS
 
